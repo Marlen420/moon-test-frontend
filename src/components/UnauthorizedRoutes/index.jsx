@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router";
 import { NotFoundPage } from "..";
-import { AuthPage } from "../../pages/authPage";
+import { AuthPage } from "./AuthPage";
 
 const UNLOGGED_ROUTES = [
     { path: '/signin', element: <AuthPage />},

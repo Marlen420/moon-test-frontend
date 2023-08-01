@@ -1,4 +1,4 @@
-import { SigninView } from "../auth"
+import { SigninView } from "../../auth"
 
 export const AuthPage = () => {
     return <SigninView />
