@@ -1,0 +1,82 @@
+.table_holder {
+    width: 100%;
+    table {
+        border-collapse: separate;
+        border-radius: 5px;
+        border-spacing: 0 10px;
+        thead {
+            border: 2px solid #ECECEC;
+            border-radius: 5px;
+            box-shadow: 0 0 0 1px #ECECEC;
+            tr {
+                border-radius: 5px;
+                th {
+                    font-weight: 500;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    button {
+                        background: none;
+                        border: none;
+                        transform: rotate(-90deg);
+                        transition: transform .2s linear;
+                    }
+                    .active_filter {
+                        transform: rotate(90deg);
+                    }
+                }
+                th:first-child {
+                    border-radius: 5px;
+                    padding-left: 20px;
+                }
+                th:last-child {
+                    border-radius: 5px;
+                    padding-right: 20px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    border-top: 2px solid #ECECEC;
+                    border-bottom: 2px solid #ECECEC;
+                    white-space: nowrap;
+                    .apartment_status {
+                        padding: 5px 20px;
+                        border-radius: 5px;
+                    }
+                }
+                td:first-child {
+                    border-left: 2px solid #ECECEC;
+                    border-radius: 5px 0 0 5px;
+                    padding-left: 20px;
+                }
+                td:last-child {
+                    border-right: 2px solid #ECECEC;
+                    border-radius: 0 5px 5px 0;
+                    padding-right: 20px;
+                    .buttons_holder {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    .spinner_holder {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.active {
+    background-color: #CEDEFC;
+}
+
+.bought {
+    background-color: #D4FCCE;
+}
+
+.booked {
+    background-color: #FCECCE;
+}

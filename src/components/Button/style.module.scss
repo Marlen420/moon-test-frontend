@@ -1,0 +1,112 @@
+$primary: #5780EB;
+.primary {
+    width: 100%;
+    padding: 10px;
+    background: $primary;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.empty {
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+.primary:hover {
+    opacity: .8;
+}
+
+.sidebar-logout {
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.sidebar-logout:hover {
+    background-color: rgba(200, 200, 200, .6);
+}
+
+.apartments-filter {
+    background: none;
+    border: none;
+    padding: 10px;
+    position: relative;
+    margin: 0 5px;
+}
+
+.apartments-filter::after {
+    transition: width .2s linear;
+    content: '-';
+    color: transparent;
+    width: 0%;
+    height: 2px;
+    background-color: #4D4AEA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.apartments-filter:hover::after {
+    width: 99%;
+}
+
+.active_filter {
+    color: #4D4AEA;
+}
+
+.active_filter::after {
+    content: '-';
+    color: transparent;
+    width: 99%;
+    height: 2px;
+    background-color: #4D4AEA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.apartments-add {
+    background-color: #D1F4D9;
+    border: none;
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+
+.apartments-add:hover {
+    background-color: rgba(25, 143, 100, .5);
+}
+
+.close-popup {
+    background: none;
+    border: none;
+    transform: scale(2);
+}
+
+.managers-add {
+    background-color: #D1F4D9;
+    border: none;
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+
+.managers-add:hover {
+    background-color: rgba(25, 143, 100, .5);
+}
+
+.cancel-delete {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.confirm-delete {
+    width: 100%;
+    background: #F98C8C;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}

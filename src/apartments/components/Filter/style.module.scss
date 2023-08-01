@@ -1,0 +1,9 @@
+.filter_holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .filter_list {
+        display: flex;
+        border-bottom: 2px solid rgba(0, 0, 0, .1);
+    }
+}

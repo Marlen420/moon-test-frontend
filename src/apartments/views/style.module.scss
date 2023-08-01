@@ -1,0 +1,20 @@
+$primary: #000;
+$theme-colors: ( "primary": $primary);
+.holder {
+    flex-grow: 1;
+    header {
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 2px solid rgba(0, 0, 0, .1);
+        h3 {
+            color: rgba(0, 0, 0, .3);
+            font-weight: 300;
+        }
+    }
+    .content {
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
