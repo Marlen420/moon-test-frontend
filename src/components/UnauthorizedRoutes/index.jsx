@@ -8,6 +8,7 @@ const UNLOGGED_ROUTES = [
 ]
 
 export default function UnauthorizedRoutes() {
+    console.log('Navigating');
     return (
         <Routes>
             {UNLOGGED_ROUTES.map((item, index) => (

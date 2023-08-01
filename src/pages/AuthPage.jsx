@@ -1,5 +1,7 @@
 import { SigninView } from "../auth"
 
-export default function AuthPage() {
+const AuthPage = () => {
     return <SigninView />
-}
+};
+
+export default AuthPage;

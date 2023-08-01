@@ -4,10 +4,10 @@ import { AuthorizedRoutes, NotFoundPage, UnauthorizedRoutes } from './components
 
 function App() {
   const { isLogged } = useSelector(state => state.auth);
-  if (isLogged) {
-    return <AuthorizedRoutes />
+  if (!isLogged) {
+    return <UnauthorizedRoutes />
   }
-  return <UnauthorizedRoutes />
+  return <AuthorizedRoutes />
 }
 
 export default App;
